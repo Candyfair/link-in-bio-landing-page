@@ -26,26 +26,61 @@
 
     <!-- Shop -->
     <section class="category">
-      <h2>SHOP</h2>
+      <h2>
+        <a href="https://candyfairstudio.etsy.com"   target="_blank" rel="noopener noreferrer">
+          SHOP
+        </a>
+      </h2>
 
       <ul>
-        <li><img src="./assets/images/frog-readymade.jpg" alt="Frog image" class="category__img">Shop ready-made knitted frogs & other stuff</li>
-        <li><img src="./assets/images/frog-ondemand.jpg" alt="Frog image" class="category__img">Buy made-to-order frogs</li>
+        <li>
+          <a href="https://candyfairstudio.etsy.com"   target="_blank" rel="noopener noreferrer">
+            <img src="./assets/images/frog-readymade.jpg" alt="Frog image" class="category__img">Shop ready-made knitted frogs & other stuff
+          </a>
+        </li>
+        <li>
+          <a href="https://candygetshandy.com/shop/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/images/frog-ondemand.jpg" alt="Frog image" class="category__img">Buy made-to-order frogs
+          </a>
+        </li>
       </ul>
     </section>
 
     <!-- Blog -->
     <section class="category">
-      <h2>BLOG</h2>
 
+      <!-- Title with image -->
+      <div class="category__blog-title">
+        <h2>
+          <a href="https://candygetshandy.com" target="_blank" rel="noopener noreferrer">
+            BLOG
+          </a>
+        </h2>
+
+        <a href="https://candygetshandy.com" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/images/title-candygetshandy.png" alt="Candy Gets Handy" class="category__blog-title__img">
+        </a>
+      </div>
+
+      <!-- API call to blog -->
+      <ul id="blog-post">
+      </ul>
 
     </section>
 
     <!-- Portfolio -->
     <section class="portfolio">
-      PORTFOLIO
+      <a href="https://www.candicefairand.com" target="_blank" rel="noopener noreferrer">
+        <p class="portfolio__link">I.T. PORTFOLIO</p>
+        <img src="./assets/images/candy-web-dev.png" alt="I.T. Portfolio" class="portfolio__img">
+      </a>
     </section>
+
+    <footer class="footer">
+      ©<script>document.write(/\d{4}/.exec(Date())[0])</script> Candy Fair
+    </footer>
   </div>
 
+  <script src="./api.js"></script>
 </body>
 </html>

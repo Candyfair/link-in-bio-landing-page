@@ -41,12 +41,13 @@
 }
 
 body {
-  /* background: hsl(240, 100%, 80%); */
-  background: linear-gradient(180deg, #9B9BFF 1.56%, #CCCCF3 55.21%);
+  background: linear-gradient(180deg, hsl(240, 100%, 80%) 1.56%, hsl(240, 62%, 88%) 55.21%);
+  background-color: hsl(240, 62%, 88%);
+  background-repeat: no-repeat;
   color: hsl(217, 100%, 14%);
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 h1{
@@ -56,6 +57,12 @@ h1{
 h2 {
   font-family: 'Titan One';
   font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+a {
+  color: hsl(217, 100%, 14%);
+  text-decoration: none;
 }
 
 .wrapper {
@@ -64,6 +71,7 @@ h2 {
   align-items: center;
   flex-direction: column;
   padding: 25px;
+  width: 100%;
 }
 
 /* --- HEADER */
@@ -87,7 +95,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   margin-top: 8px;
   width: 60px;
 }
@@ -98,7 +106,7 @@ h2 {
   justify-content: flex-start;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 ul {
@@ -119,6 +127,14 @@ ul li {
   align-items: center;
 }
 
+.short-title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
 .category__img {
   border-radius: 50px;
   height: 55px;
@@ -126,4 +142,65 @@ ul li {
   position: absolute;
   top: 3px;
   width: 55px;
+}
+
+.category__blog-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.category__blog-title__img {
+  width: 200px;
+  margin-left: 8px;
+}
+
+.portfolio {
+  background-color: hsl(240, 100%, 94%);
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 65px;
+  justify-content: flex-start;
+  margin-top: 12px;
+  padding-left: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.portfolio__link {
+  font-family: 'Titan One';
+  font-size: 1.5rem;
+}
+
+.portfolio__img {
+  position: absolute;
+  right: 5px;
+  top: -20px;
+}
+
+.footer {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    max-width: 410px;
+    border-radius: 30px;
+    box-shadow: inset -10px -10px 15px hsla(0, 0%, 100%, 0.2),
+      inset 10px 10px 15px hsla(217, 100%, 14%, 0.1);
+  }
+
 }
