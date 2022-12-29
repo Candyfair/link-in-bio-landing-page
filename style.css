@@ -203,4 +203,8 @@ ul li {
       inset 10px 10px 15px hsla(217, 100%, 14%, 0.1);
   }
 
+  a:hover {
+    color: hsl(320, 100%, 38%);
+  }
+
 }
